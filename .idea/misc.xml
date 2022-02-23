@@ -7,6 +7,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/unicorn-auth/pom.xml" />
         <option value="$PROJECT_DIR$/unicorn-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/unicorn-common/unicorn-common-core/pom.xml" />
+        <option value="$PROJECT_DIR$/unicorn-visual/unicorn-visual-monitor/pom.xml" />
       </list>
     </option>
   </component>

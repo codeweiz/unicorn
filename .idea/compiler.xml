@@ -6,12 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="unicorn-common-core" />
+        <module name="unicorn-common-datascope" />
+        <module name="unicorn-visual-monitor" />
         <module name="unicorn-visual" />
-        <module name="unicorn-common" />
-        <module name="unicorn-modules" />
         <module name="unicorn-auth" />
+        <module name="unicorn-common-swagger" />
+        <module name="unicorn-common-datasource" />
         <module name="unicorn-gateway" />
+        <module name="unicorn-modules" />
+        <module name="unicorn-common-log" />
+        <module name="unicorn-common-security" />
         <module name="unicorn-api" />
+        <module name="unicorn-common-redis" />
       </profile>
     </annotationProcessing>
   </component>
@@ -19,6 +26,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="unicorn-auth" options="-parameters" />
       <module name="unicorn-gateway" options="-parameters" />
+      <module name="unicorn-visual-monitor" options="-parameters" />
     </option>
   </component>
 </project>

@@ -3,5 +3,6 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/unicorn-auth/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/unicorn-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/unicorn-visual/unicorn-visual-monitor/src/main/java" charset="UTF-8" />
   </component>
 </project>
