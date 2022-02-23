@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/unicorn-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/unicorn-common/unicorn-common-core/pom.xml" />
         <option value="$PROJECT_DIR$/unicorn-visual/unicorn-visual-monitor/pom.xml" />
+        <option value="$PROJECT_DIR$/unicorn-modules/unicorn-modules-system/pom.xml" />
       </list>
     </option>
   </component>

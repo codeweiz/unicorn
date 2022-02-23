@@ -11,6 +11,12 @@
 
     <artifactId>unicorn-visual</artifactId>
 
+    <modules>
+        <module>unicorn-visual-monitor</module>
+    </modules>
+
+    <packaging>pom</packaging>
+
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>

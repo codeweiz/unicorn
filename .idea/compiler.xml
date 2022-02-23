@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -9,15 +10,14 @@
         <module name="unicorn-common-core" />
         <module name="unicorn-common-datascope" />
         <module name="unicorn-visual-monitor" />
-        <module name="unicorn-visual" />
+        <module name="unicorn-modules-system" />
         <module name="unicorn-auth" />
         <module name="unicorn-common-swagger" />
+        <module name="unicorn-api-system" />
         <module name="unicorn-common-datasource" />
         <module name="unicorn-gateway" />
-        <module name="unicorn-modules" />
         <module name="unicorn-common-log" />
         <module name="unicorn-common-security" />
-        <module name="unicorn-api" />
         <module name="unicorn-common-redis" />
       </profile>
     </annotationProcessing>
@@ -26,6 +26,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="unicorn-auth" options="-parameters" />
       <module name="unicorn-gateway" options="-parameters" />
+      <module name="unicorn-modules-system" options="-parameters" />
       <module name="unicorn-visual-monitor" options="-parameters" />
     </option>
   </component>

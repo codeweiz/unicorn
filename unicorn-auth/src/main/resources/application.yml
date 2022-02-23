@@ -1,0 +1,23 @@
+server:
+  port: 9997
+spring:
+  application:
+    name: unicorn-auth
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/unicorn?useUnicode=true&useSSl=false
+    username: root
+    password: 123456
+  cloud:
+    nacos:
+      discovery:
+        # 服务注册地址
+        server-addr: 47.100.131.2:8848
+      config:
+        # 配置中心地址
+        server-addr: 47.100.131.2:8848
+        # 配置文件格式
+        file-extension: yml
+        # 共享配置
+        shared-configs:
+          - application.${spring.cloud.nacos.config.file-extension}
