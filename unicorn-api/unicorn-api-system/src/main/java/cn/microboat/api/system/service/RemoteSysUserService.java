@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * @author zhouwei
  */
-@FeignClient(contextId = "remoteUserService", value = "unicorn-system", fallbackFactory = RemoteSysUserFallbackFactory.class)
+@FeignClient(contextId = "remoteSysUserService", value = "unicorn-system", fallbackFactory = RemoteSysUserFallbackFactory.class)
 public interface RemoteSysUserService {
 
     /**

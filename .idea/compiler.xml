@@ -24,9 +24,9 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="unicorn-auth" options="-parameters" />
+      <module name="unicorn-auth" options="" />
       <module name="unicorn-gateway" options="-parameters" />
-      <module name="unicorn-modules-system" options="-parameters" />
+      <module name="unicorn-modules-system" options="" />
       <module name="unicorn-visual-monitor" options="-parameters" />
     </option>
   </component>

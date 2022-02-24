@@ -8,7 +8,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 /**
  * @author zhouwei
  */
-@EnableFeignClients
+@EnableFeignClients(basePackages = "cn.microboat.api.system.service")
 @SpringBootApplication
 @EnableDiscoveryClient
 public class UnicornAuthApplication {
