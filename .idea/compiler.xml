@@ -7,17 +7,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="unicorn-common-datasource" />
         <module name="unicorn-common-core" />
         <module name="unicorn-common-datascope" />
+        <module name="unicorn-gateway" />
         <module name="unicorn-visual-monitor" />
         <module name="unicorn-modules-system" />
         <module name="unicorn-auth" />
-        <module name="unicorn-common-swagger" />
-        <module name="unicorn-api-system" />
-        <module name="unicorn-common-datasource" />
-        <module name="unicorn-gateway" />
         <module name="unicorn-common-log" />
         <module name="unicorn-common-security" />
+        <module name="unicorn-common-swagger" />
+        <module name="unicorn-api-system" />
         <module name="unicorn-common-redis" />
       </profile>
     </annotationProcessing>
