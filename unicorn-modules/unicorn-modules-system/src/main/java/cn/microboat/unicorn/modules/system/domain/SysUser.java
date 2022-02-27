@@ -1,10 +1,12 @@
 package cn.microboat.unicorn.modules.system.domain;
 
 import cn.microboat.common.core.domain.BasicEntity;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
 
@@ -24,7 +26,7 @@ public class SysUser extends BasicEntity {
     /**
      * 用户ID
      * */
-    private String id;
+    private Long id;
 
     /**
      * 用户名
@@ -39,6 +41,8 @@ public class SysUser extends BasicEntity {
     /**
      * 出生日期
      * */
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date birthday;
 
     /**

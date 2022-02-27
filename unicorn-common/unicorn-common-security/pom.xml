@@ -10,6 +10,18 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>unicorn-common-security</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>cn.microboat</groupId>
+            <artifactId>unicorn-common-redis</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>cn.microboat</groupId>
+            <artifactId>unicorn-api-system</artifactId>
+        </dependency>
+    </dependencies>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

@@ -47,6 +47,7 @@
         <unicorn.version>1.0-SNAPSHOT</unicorn.version>
         <mysql.version>5.1.47</mysql.version>
         <mybatisplus.version>3.5.1</mybatisplus.version>
+        <mapstruct.version>1.4.2.Final</mapstruct.version>
     </properties>
 
     <!-- 依赖声明 -->
@@ -115,6 +116,7 @@
                 <version>${spring-boot.mybatis}</version>
             </dependency>
 
+            <!-- Mybatis plus 依赖配置 -->
             <dependency>
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-boot-starter</artifactId>
@@ -128,6 +130,7 @@
                 <version>${swagger.core.version}</version>
             </dependency>
 
+            <!-- Swagger-annotations -->
             <dependency>
                 <groupId>io.swagger</groupId>
                 <artifactId>swagger-annotations</artifactId>
@@ -146,6 +149,20 @@
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
+            </dependency>
+
+            <!-- mapstruct -->
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct</artifactId>
+                <version>${mapstruct.version}</version>
+            </dependency>
+
+            <!-- mapstruct-processor -->
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct-processor</artifactId>
+                <version>${mapstruct.version}</version>
             </dependency>
 
             <!-- pagehelper 分页插件 -->
@@ -211,24 +228,28 @@
                 <version>${transmittable-thread-local.version}</version>
             </dependency>
 
+            <!-- unicorn-modules-system -->
             <dependency>
                 <groupId>cn.microboat</groupId>
                 <artifactId>unicorn-modules-system</artifactId>
                 <version>${unicorn.version}</version>
             </dependency>
 
+            <!-- mysql-connector-java -->
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql.version}</version>
             </dependency>
 
+            <!-- unicorn-api-system -->
             <dependency>
                 <groupId>cn.microboat</groupId>
                 <artifactId>unicorn-api-system</artifactId>
                 <version>${unicorn.version}</version>
             </dependency>
 
+            <!-- unicorn-common-core -->
             <dependency>
                 <groupId>cn.microboat</groupId>
                 <artifactId>unicorn-common-core</artifactId>
