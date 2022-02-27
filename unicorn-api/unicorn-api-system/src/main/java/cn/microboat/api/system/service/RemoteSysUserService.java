@@ -34,4 +34,14 @@ public interface RemoteSysUserService {
     @PostMapping("/sys/user/add")
     BasicReturn<SysUser> addSysUser(SysUserVo sysUserVo);
 
+    /**
+     * 用户注册
+     *
+     * @param sysUserVo 客户端传入
+     *
+     * @return BasicReturn SysUser
+     * */
+    @PostMapping("/sys/user/register")
+    BasicReturn<SysUser> register(SysUserVo sysUserVo);
+
 }

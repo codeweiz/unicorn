@@ -3,7 +3,6 @@ package cn.microboat.unicorn.auth.controller;
 import cn.microboat.common.core.domain.BasicReturn;
 import cn.microboat.common.security.service.TokenService;
 import cn.microboat.unicorn.auth.model.LoginModel;
-import cn.microboat.unicorn.auth.model.RegisterModel;
 import cn.microboat.unicorn.auth.service.SysLoginService;
 import cn.microboat.unicorn.modules.system.domain.SysUser;
 import cn.microboat.unicorn.modules.system.domain.vo.SysUserVo;
@@ -58,11 +57,11 @@ public class TokenController {
     /**
      * 注册
      *
-     * @param registerModel 注册信息
+     * @param sysUserVo 用户注册信息
      * */
     @PostMapping("/register")
-    public BasicReturn<?> register(@RequestBody RegisterModel registerModel) {
-        return BasicReturn.ok();
+    public BasicReturn<?> register(@RequestBody SysUserVo sysUserVo) {
+        return sysLoginService.register(sysUserVo);
     }
 
     /**

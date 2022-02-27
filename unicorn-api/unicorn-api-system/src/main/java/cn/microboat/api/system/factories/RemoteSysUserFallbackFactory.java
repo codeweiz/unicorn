@@ -22,4 +22,9 @@ public class RemoteSysUserFallbackFactory implements RemoteSysUserService {
     public BasicReturn<SysUser> addSysUser(SysUserVo sysUserVo) {
         return BasicReturn.fail("用户增加失败！");
     }
+
+    @Override
+    public BasicReturn<SysUser> register(SysUserVo sysUserVo) {
+        return BasicReturn.fail("用户注册失败！");
+    }
 }

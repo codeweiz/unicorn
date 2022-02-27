@@ -1,7 +1,6 @@
 package cn.microboat.unicorn.modules.system.service.impl;
 
 import cn.microboat.common.core.domain.BasicReturn;
-import cn.microboat.common.core.text.UUID;
 import cn.microboat.unicorn.modules.system.domain.SysUser;
 import cn.microboat.unicorn.modules.system.domain.vo.SysUserVo;
 import cn.microboat.unicorn.modules.system.mapper.SysUserConvertMapper;
@@ -16,6 +15,7 @@ import javax.annotation.Resource;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.atomic.AtomicLong;
 import java.util.function.Function;
 
 /**
@@ -27,6 +27,8 @@ public class SysUserServiceImpl implements SysUserService {
     @Resource
     private SysUserMapper sysUserMapper;
 
+    private static AtomicLong userId = new AtomicLong(20220000);
+
     @Override
     public BasicReturn<List<SysUser>> getSysUserList() {
         return BasicReturn.ok(sysUserMapper.selectList(new QueryWrapper<>()));
@@ -35,7 +37,18 @@ public class SysUserServiceImpl implements SysUserService {
     @Override
     public BasicReturn<SysUser> addUser(SysUserVo sysUserVo) {
         SysUser sysUser = SysUserConvertMapper.INSTANCE.model2Entity(sysUserVo);
-        sysUser.setId(UUID.fastUUID().getLeastSignificantBits());
+        sysUser.setId(userId.get());
+        userId.incrementAndGet();
+        sysUser.setStatus("0");
+        sysUserMapper.insert(sysUser);
+        return BasicReturn.ok(sysUser);
+    }
+
+    @Override
+    public BasicReturn<SysUser> register(SysUserVo sysUserVo) {
+        SysUser sysUser = SysUserConvertMapper.INSTANCE.model2Entity(sysUserVo);
+        sysUser.setId(userId.get());
+        userId.incrementAndGet();
         sysUser.setStatus("0");
         sysUserMapper.insert(sysUser);
         return BasicReturn.ok(sysUser);

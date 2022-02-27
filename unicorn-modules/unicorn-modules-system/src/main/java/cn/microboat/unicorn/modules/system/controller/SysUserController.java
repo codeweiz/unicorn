@@ -35,4 +35,12 @@ public class SysUserController {
         return sysUserService.addUser(sysUserVo);
     }
 
+    /**
+     * 用户注册
+     * */
+    @PostMapping("/register")
+    public BasicReturn<SysUser> register(@RequestBody SysUserVo sysUserVo) {
+        return sysUserService.register(sysUserVo);
+    }
+
 }

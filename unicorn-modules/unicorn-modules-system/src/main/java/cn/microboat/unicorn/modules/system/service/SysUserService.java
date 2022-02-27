@@ -28,4 +28,13 @@ public interface SysUserService extends IService<SysUser> {
      * */
     BasicReturn<SysUser> addUser(SysUserVo sysUserVo);
 
+    /**
+     * 用户注册
+     *
+     * @param sysUserVo 客户端传入
+     *
+     * @return BasicReturn SysUser
+     * */
+    BasicReturn<SysUser> register(SysUserVo sysUserVo);
+
 }

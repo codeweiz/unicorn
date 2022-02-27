@@ -38,4 +38,15 @@ public class SysLoginService {
         return remoteSysUserService.addSysUser(sysUserVo);
     }
 
+    /**
+     * 用户注册
+     *
+     * @param sysUserVo 客户端传入
+     *
+     * @return BasicReturn SysUser
+     * */
+    public BasicReturn<SysUser> register(SysUserVo sysUserVo) {
+        return remoteSysUserService.register(sysUserVo);
+    }
+
 }
