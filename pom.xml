@@ -262,6 +262,13 @@
                 <version>${unicorn.version}</version>
             </dependency>
 
+            <!-- unicorn-common-log -->
+            <dependency>
+                <groupId>cn.microboat</groupId>
+                <artifactId>unicorn-common-log</artifactId>
+                <version>${unicorn.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 

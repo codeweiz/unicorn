@@ -75,6 +75,11 @@
             <artifactId>mapstruct-processor</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>cn.microboat</groupId>
+            <artifactId>unicorn-common-log</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>

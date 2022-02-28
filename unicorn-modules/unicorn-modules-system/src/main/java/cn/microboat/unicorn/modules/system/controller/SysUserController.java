@@ -1,6 +1,7 @@
 package cn.microboat.unicorn.modules.system.controller;
 
 import cn.microboat.common.core.domain.BasicReturn;
+import cn.microboat.common.log.annotation.Log;
 import cn.microboat.unicorn.modules.system.domain.SysUser;
 import cn.microboat.unicorn.modules.system.domain.vo.SysUserVo;
 import cn.microboat.unicorn.modules.system.service.impl.SysUserServiceImpl;
@@ -23,6 +24,7 @@ public class SysUserController {
      * 不分页查询所有用户列表
      * */
     @GetMapping("/list")
+    @Log
     public BasicReturn<List<SysUser>> getSysUserList() {
         return sysUserService.getSysUserList();
     }
