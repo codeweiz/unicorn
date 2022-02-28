@@ -5,7 +5,7 @@ import cn.microboat.common.core.text.UUID;
 /**
  * ID生成器工具类
  * 
- * @author ruoyi
+ * @author zhouwei
  */
 public class IdUtils
 {

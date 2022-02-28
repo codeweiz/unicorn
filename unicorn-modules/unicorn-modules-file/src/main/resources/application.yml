@@ -1,0 +1,29 @@
+minio:
+  url: http://47.100.131.2:9000
+  accessKey: microboat
+  secretKey: microboat
+  bucketName: unicorn
+
+server:
+  port: 9981
+spring:
+  application:
+    name: unicorn-file
+  http:
+    multipart:
+      enabled: true
+      max-file-size: 30
+      max-request-size: 30
+  cloud:
+    nacos:
+      discovery:
+        # 服务注册地址
+        server-addr: 47.100.131.2:8848
+#      config:
+#        # 配置中心地址
+#        server-addr: 47.100.131.2:8848
+#        # 配置文件格式
+#        file-extension: yml
+#        # 共享配置
+#        shared-configs:
+#          - application.${spring.cloud.nacos.config.file-extension}

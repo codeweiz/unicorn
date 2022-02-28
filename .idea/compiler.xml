@@ -12,6 +12,7 @@
         <module name="unicorn-gateway" />
         <module name="unicorn-visual-monitor" />
         <module name="unicorn-modules-system" />
+        <module name="unicorn-modules-file" />
         <module name="unicorn-auth" />
         <module name="unicorn-common-log" />
         <module name="unicorn-common-security" />
@@ -25,6 +26,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="unicorn-auth" options="" />
       <module name="unicorn-gateway" options="-parameters" />
+      <module name="unicorn-modules-file" options="" />
       <module name="unicorn-modules-system" options="" />
       <module name="unicorn-visual-monitor" options="-parameters" />
     </option>

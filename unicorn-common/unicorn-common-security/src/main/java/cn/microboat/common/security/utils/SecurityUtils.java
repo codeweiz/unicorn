@@ -14,7 +14,7 @@ import java.util.Objects;
 /**
  * 权限获取工具类
  * 
- * @author ruoyi
+ * @author zhouwei
  */
 public class SecurityUtils
 {

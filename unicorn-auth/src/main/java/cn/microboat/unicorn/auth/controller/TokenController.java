@@ -1,5 +1,6 @@
 package cn.microboat.unicorn.auth.controller;
 
+import cn.microboat.api.system.model.LoginUser;
 import cn.microboat.common.core.domain.BasicReturn;
 import cn.microboat.common.security.service.TokenService;
 import cn.microboat.unicorn.auth.model.LoginModel;
@@ -31,7 +32,12 @@ public class TokenController {
      * */
     @PostMapping("/login")
     public BasicReturn<?> login(@RequestBody LoginModel loginModel) {
-        return BasicReturn.ok();
+        LoginUser user = new LoginUser();
+        SysUser sysUser = new SysUser();
+        sysUser.setId(1000L);
+        sysUser.setUsername("hahah");
+        user.setSysUser(sysUser);
+        return BasicReturn.ok(tokenService.createToken(user));
     }
 
     /**
