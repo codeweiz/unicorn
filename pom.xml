@@ -48,6 +48,7 @@
         <mysql.version>5.1.47</mysql.version>
         <mybatisplus.version>3.5.1</mybatisplus.version>
         <mapstruct.version>1.4.2.Final</mapstruct.version>
+        <logstash.version>4.11</logstash.version>
     </properties>
 
     <!-- 依赖声明 -->
@@ -246,6 +247,12 @@
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>net.logstash.logback</groupId>
+                <artifactId>logstash-logback-encoder</artifactId>
+                <version>${logstash.version}</version>
             </dependency>
 
             <!-- unicorn-api-system -->
